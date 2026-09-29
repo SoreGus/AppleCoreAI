@@ -5,8 +5,8 @@ import PackageDescription
 let package = Package(
   name: "AppleCoreAI",
   platforms: [
-    .iOS("27.0"),
-    .macOS("27.0"),
+    .iOS(.v17),
+    .macOS(.v14),
   ],
   products: [
     .library(

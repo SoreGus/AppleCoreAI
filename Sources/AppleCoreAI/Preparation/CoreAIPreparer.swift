@@ -7,6 +7,7 @@ import Foundation
 public actor CoreAIPreparer {
   public init() {}
 
+  @available(iOS 27.0, macOS 27.0, *)
   public func specialize(
     _ artifact: CoreAIArtifact
   ) async throws -> Data {
@@ -26,6 +27,7 @@ public actor CoreAIPreparer {
     #endif
   }
 
+  @available(iOS 27.0, macOS 27.0, *)
   public func deleteSpecialization(
     referencedBy bookmark: Data
   ) throws {

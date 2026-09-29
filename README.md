@@ -8,8 +8,10 @@ Swift tooling for discovering, downloading, validating, preparing, caching, and 
 
 - Swift 6.2+
 - Xcode 27+
-- iOS 27+
-- macOS 27+
+- iOS 17+
+- macOS 14+
+
+Core AI specialization and runtime-specific operations require iOS 27+ or macOS 27+. Repository discovery, manifests, Hugging Face downloads, integrity validation, and cache management remain available on the package baseline.
 - Metal Toolchain when running Core AI models
 
 ## Installation

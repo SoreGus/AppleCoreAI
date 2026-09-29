@@ -138,6 +138,7 @@ public actor CoreAIModelManager {
     )
   }
 
+  @available(iOS 27.0, macOS 27.0, *)
   public func prepare(
     _ artifact: CoreAIArtifact,
     for variant: CoreAIModelVariant,
@@ -160,6 +161,7 @@ public actor CoreAIModelManager {
     )
   }
 
+  @available(iOS 27.0, macOS 27.0, *)
   public func prepareIfNeeded(
     _ variant: CoreAIModelVariant,
     retentionPolicy: CoreAIPreparationRetentionPolicy = .keepSource,
@@ -201,6 +203,7 @@ public actor CoreAIModelManager {
     try await cache.removeSource(for: variant)
   }
 
+  @available(iOS 27.0, macOS 27.0, *)
   public func deletePrepared(
     for variant: CoreAIModelVariant
   ) async throws {
@@ -210,6 +213,7 @@ public actor CoreAIModelManager {
     try await cache.removePrepared(for: variant)
   }
 
+  @available(iOS 27.0, macOS 27.0, *)
   public func deleteAll(
     for variant: CoreAIModelVariant
   ) async throws {
