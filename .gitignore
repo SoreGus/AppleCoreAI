@@ -1,0 +1,15 @@
+.DS_Store
+.build/
+.swiftpm/
+Package.resolved
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.log
